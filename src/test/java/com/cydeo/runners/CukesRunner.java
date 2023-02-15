@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@wip"
+        tags = "@regression"
         //tags = "@librarian"
         //tags = "@student or admin"
         //tags = "@regression and not student"

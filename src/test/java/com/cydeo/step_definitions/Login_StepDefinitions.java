@@ -10,8 +10,7 @@ public class Login_StepDefinitions {
 
     @Given("user is on the library login page")
     public void user_is_on_the_library_login_page() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        System.out.println("user is on the library login page");
     }
 
     @When("user enters librarian username")
