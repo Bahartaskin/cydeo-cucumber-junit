@@ -1,5 +1,5 @@
 
-@regression @smoke
+@regression @smoke @login
 Feature: Library app login feature
   User Story:
   As a user, I should be able to login with correct credentials to different
@@ -16,18 +16,19 @@ Feature: Library app login feature
     And user enters librarian password
     Then user should see the dashboard
 
-  @student
+  @student @db #dataBase
   Scenario: Login as student
     When user enters student username
     And user enters student password
     Then user should see the dashboard
 
-  @admin
+  @admin @employee
   Scenario: Login as admin
     When user enters admin username
     And user enters admin password
     Then user should see the dashboard
 
+#this is how we add comments in feature file
 
 #- We can use tags to include or exclude some scenarios.
 #- If we put the @Tag on top of the .feature file, it will effect the whole feature file
